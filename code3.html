@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/classwork.css">
+</head>
+
+
+
+
+<body>
+    <script>
+factval = 1;
+
+for (i=0; i<84 ; i++){
+ factval = factval * (84- i);
+}
+
+console.log("The answer is:", factval)
+
+    </script>
+
+    
+ <script src="/classwork.js">
+
+let x = 5;
+
+let y = 6;
+
+let c = x-1;
+
+
+let facta = 1;
+
+let factb = 1;
+
+let factc = 1;
+
+let factx = 1;
+
+let facty = 1;
+
+
+
+    if (x>y){
+    for (i= 0; i < x ; i++){
+        factx = factx * (x - i); //Factorial of X
+    }
+
+    for (i= 0; i < y ; i++){
+        facty = facty * (y- i); //Factorial of Y
+    }
+
+    for (i= 0; i < x-y ; i++){
+        facta = facta * (x - y - i); //Factorial of X - y
+    }
+
+let answer = factx/(facty* facta);  //Resulting combination equation.
+
+}
+
+else if(y>x){
+
+    for (i= 0; i < y ; i++){
+        facty = facty * (y - i); //Factorial of y
+    }
+
+    for (i= 0; i < x ; i++){
+        factx = factx * (x - i); //Factorial of x
+    }
+
+    
+    for (i= 0; i < y -x ; i++){
+        factb = factb * (y - x - i);  //Factorial of y - x
+    }
+
+let answer = facty/(factx* factb); //Resulting combination equation answer.
+
+}
+
+else{
+    for (i= 0; i < c ; i++){
+        factc = factc * (c - i);  //Factorial of c = factorial of x - 1
+    }
+
+    for (i= 0; i < y; i++){
+        facty = facty * (y - i);  //Factorial of y
+    }
+
+    
+    for (i= 0; i < c ; i++){
+        factd = factd * (c - y - i);  //Factorial of x - 1 - y
+    }
+
+let answer = factc/(facty* factd);   //Resulting combination equation answer.
+
+
+}
+
+console.log("The answer is:",answer);  // Resulting answer.
+ </script>
+
+
+ <script>
+    const myArray = [1,2,3,4,5,6,7,8,9,10];
+
+let sum = 0;
+
+for (let i = 0; i < 10; i++){
+
+    sum = sum + myArray[i];
+}
+
+const average = sum/ 10;
+
+console.log("The average is:", average);
+
+
+ </script>
+
+
+</body>
+</html>
